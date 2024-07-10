@@ -46,7 +46,10 @@ This repository provides a comprehensive cheat sheet for using Nmap, a powerful 
 
 2. **Scan untuk menemukan port SSH yang mungkin telah diubah:**
    ```bash
-   nmap -p 1-65535 --open -sV --script=ssh-hostkey <target>
+   nmap -p 1-5000 --open -sV --script=ssh-hostkey <target>
+   ```
+   ```bash
+   nmap -p 1-5000 --open -sV <target>
    ```
 
 ### Scan dengan Pilihan Tambahan
@@ -68,7 +71,10 @@ This repository provides a comprehensive cheat sheet for using Nmap, a powerful 
 ### Contoh Penggunaan
 1. **Mencari port SSH yang telah diubah:**
    ```bash
-   nmap -p 1-65535 -sV --script=ssh-hostkey <target>
+   nmap -p 1-5000 -sV --script=ssh-hostkey <target>
+   ```
+   ```bash
+   nmap -p 1-5000 -sV <target>
    ```
 
 2. **Scan cepat pada semua port umum:**
@@ -91,5 +97,3 @@ This repository provides a comprehensive cheat sheet for using Nmap, a powerful 
   ```bash
   nmap -oN output.txt -p 1-65535 <target>
   ```
-
-Dengan cheat sheet ini, Anda dapat melakukan scanning menggunakan Nmap untuk menemukan port spesifik, termasuk port SSH yang telah diubah.
